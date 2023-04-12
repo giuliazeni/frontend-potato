@@ -2,9 +2,14 @@
 <html>
   <head>
     <title>Frontend Potato</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta property="og:title" content="Frontend Potato: a project collection by Giulia Zeni" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Since attending Le Wagon coding bootcamp in 2023 I am building things online. Have a look!" />
+        <meta property="og:image" content="https://memymilk.com/wp-content/uploads/2023/03/cover.jpg" />
+        <meta property="og:url" content="https://www.careerpal.me" />
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>

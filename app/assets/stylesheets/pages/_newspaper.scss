@@ -1,0 +1,91 @@
+
+@import url('https://fonts.cdnfonts.com/css/franklin-gothic');
+
+.brand-header {
+  font-family: 'Franklin Gothic', sans-serif;
+  font-size: 25px;
+  grid-area: brand-header;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.nav-links {
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  grid-area: nav-links;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 30px;
+  border: solid 2px black;
+  border-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.section-link {
+  text-decoration: none;
+  color: darkolivegreen;
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.section-link:hover {
+  text-decoration: underline;
+}
+
+.story {
+  border: solid 2px black;
+  padding: 10px;
+}
+
+.story-1 {
+  grid-area: story-1;
+  border-right: 0px;
+  border-bottom: 0px;
+}
+
+.story-2 {
+  grid-area: story-2;
+  border-right: 0px;
+  border-bottom: 0px;
+}
+
+.story-3 {
+  grid-area: story-3;
+  border-bottom: 0px;
+}
+
+.story-4 {
+  grid-area: story-4;
+  border-right: 0px;
+}
+
+.double-story {
+  grid-area: double-story;
+}
+
+.article-title {
+  text-align: center;
+  font-family: 'Franklin Gothic', sans-serif;
+}
+
+.article-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 190px;
+  height: 190px;
+}
+
+.page {
+  margin: auto 150px;
+  display: grid;
+  grid-template-areas:
+  'brand-header brand-header brand-header'
+  'nav-links nav-links nav-links'
+  'story-1 story-2 story-3'
+  'story-4 double-story double-story';
+}
