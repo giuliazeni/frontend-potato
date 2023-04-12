@@ -1,0 +1,102 @@
+/*
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,700&family=Source+Sans+Pro:wght@600&display=swap');
+
+body {
+  background-color: #F1FAEE;
+  font-family: 'Source Code Pro', monospace;
+  color: #A8DADC;
+  box-sizing: border-box;
+}
+
+a {
+  font-family: 'Source Code Pro', monospace;
+  text-decoration: none;
+  color: #F1FAEE;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.8em;
+  line-height: 1;
+  font-weight: none;
+}
+
+h2, h3 {
+  font-size: 1em;
+  _line-height: .5em;
+}
+
+.unordered-list {
+  _padding: 10px;
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  padding: 32px;
+  display: inline;
+}
+
+#profile-pic{
+  border-radius: 50%;
+}
+
+.card {
+  _border: 2px dotted red;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #1D3557;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 2px 2px 3px grey;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  _background-color: green;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+@media (max-width: 440px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* For a screen < 540px, this CSS will be read. */
+  .container {
+    width: 200px;
+  }
+}
