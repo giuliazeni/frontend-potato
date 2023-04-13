@@ -1,0 +1,31 @@
+.user-data-group {
+  position: relative;
+  display: inline-block;
+}
+
+.input-label {
+  background-color: white;
+  font-size: 11px;
+  color: brown;
+  position: absolute;
+  left: 25px;
+  padding: 0 2px;
+}
+
+.input-label-1 {
+  top: 12px;
+}
+
+.input-label-2 {
+  top: 12px;
+}
+
+.input-label-3 {
+  top: 12px;
+}
+
+.input {
+  border-radius: 100px;
+  padding: 8px;
+  margin: 16px;
+}
