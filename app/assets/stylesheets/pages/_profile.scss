@@ -1,15 +1,13 @@
-/*
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,700&family=Source+Sans+Pro:wght@600&display=swap');
 
-body {
+.my-page {
   background-color: #F1FAEE;
   font-family: 'Source Code Pro', monospace;
   color: #A8DADC;
   box-sizing: border-box;
 }
 
-a {
+.my-a {
   font-family: 'Source Code Pro', monospace;
   text-decoration: none;
   color: #F1FAEE;
@@ -17,39 +15,38 @@ a {
   font-size: 1em;
 }
 
-a:hover {
-  text-decoration: none;
+.my-a:hover {
+  text-decoration: underline;
 }
 
-h1 {
+.my-h1 {
   font-family: 'Source Code Pro', monospace;
   font-size: 1.8em;
   line-height: 1;
   font-weight: none;
 }
 
-h2, h3 {
+.my-h2, .my-h3 {
   font-size: 1em;
-  _line-height: .5em;
 }
 
-.unordered-list {
+.my-unordered-list {
   _padding: 10px;
   list-style: none;
   padding-left: 0;
 }
 
-li {
+.my-li {
   padding: 32px;
   display: inline;
 }
 
-#profile-pic{
+.profile-pic{
   border-radius: 50%;
+  width: 250px;
 }
 
-.card {
-  _border: 2px dotted red;
+.my-card {
   margin-top: 20px;
   margin-bottom: 20px;
   background: #1D3557;
@@ -58,10 +55,9 @@ li {
   box-shadow: 2px 2px 3px grey;
 }
 
-.container {
-  max-width: 500px;
+.my-container {
+  max-width: 800px;
   margin: 0 auto;
-  _background-color: green;
   padding: 20px;
   text-align: center;
 }
@@ -71,7 +67,7 @@ li {
   .container {
     width: 700px;
   }
-
+}
 
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
