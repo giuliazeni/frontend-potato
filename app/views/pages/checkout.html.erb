@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="checkout.scss">
   </head>
 
-  <body>
+  <body class="checkout-container">
     <nav class="checkout-nav">
       <%= image_tag "coffee_masters_logo.png", id: "coffee-logo", alt: "coffee logo" %>
       <h1>Zeni's Coffee</h1>
@@ -35,6 +35,8 @@
         <input id="ccv" type="text" class="input" placeholder="--"/>
       </div>
     </div>
-
+    <div class="checkout-button-center">
+      <button class="checkout-button">Place order</button>
+    </div>
   </body>
 </html>
