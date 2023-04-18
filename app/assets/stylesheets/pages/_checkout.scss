@@ -20,6 +20,33 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.checkout-ul {
+  list-style-type: none;
+}
+
+.checkout-quantity {
+  grid-area: quantity;
+}
+
+.checkout-item {
+  grid-area: item;
+}
+
+.checkout-price {
+  grid-area: price;
+}
+
+.sections-features {
+  background-color: #EDE1D5;
+    font-family: 'Open Sans', sans-serif;
+    padding: 24px;
+    margin: 32px;
+    display: grid;
+    grid-template-areas:
+    'quantity item . price'
+    'quantity item . price'
+  }
+
 .user-data-group {
   position: relative;
   display: inline-block;
@@ -54,12 +81,20 @@
 
 .checkout-button-center {
   display: flex;
+  justify-content: center;
 }
 
 .checkout-button {
   background-color: #DEB993;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  width: 1000px;
+  height: 60px;
   border: none;
   border-radius: 40px;
-  padding: 16px;
+  padding: 8px;
+  margin: 24px;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }

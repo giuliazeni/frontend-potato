@@ -15,26 +15,39 @@
       <%= image_tag "coffee_masters_logo.png", id: "coffee-logo", alt: "coffee logo" %>
       <h1>Zeni's Coffee</h1>
     </nav>
-    <div>
+
+    <div class="sections-features">
       <h3 class="checkout-h3">ITEMS</h3>
+      <ul class="checkout-ul">
+        <li class="checkout-quantity">1x</li>
+        <li class="checkout-item">Cappuccino</li>
+        <li class="checkout-price">€ 6.00</li>
+        <li>Light Foam</li>
+      </ul>
     </div>
 
     <div>
+      <section class="sections-features">
         <h3 class="checkout-h3">NAME</h3>
-      <div class="user-data-group">
-        <label for="user-name" class="input-label input-label-1">Name for order</label>
-        <input id="user-name" type="text" class="input" placeholder="Jane Smith"/>
-      </div>
-      <h3 class="checkout-h3">PAYMENT</h3>
-      <div class="user-data-group">
-        <label for="card-number" class="input-label input-label-2">Card number</label>
-        <input id="card-number" type="text" class="input" placeholder="XXXX XXXX XXXX XXXX"/>
-      </div>
-      <div class="user-data-group">
-        <label for="ccv" class="input-label input-label-3">CCV number</label>
-        <input id="ccv" type="text" class="input" placeholder="--"/>
-      </div>
+        <div class="user-data-group">
+          <label for="user-name" class="input-label input-label-1">Name for order</label>
+          <input id="user-name" type="text" class="input" placeholder="Jane Smith"/>
+        </div>
+      </section>
+
+      <section class="sections-features">
+        <h3 class="checkout-h3">PAYMENT</h3>
+        <div class="user-data-group">
+          <label for="card-number" class="input-label input-label-2">Card number</label>
+          <input id="card-number" type="text" class="input" placeholder="XXXX XXXX XXXX XXXX"/>
+        </div>
+        <div class="user-data-group">
+          <label for="ccv" class="input-label input-label-3">CCV number</label>
+          <input id="ccv" type="text" class="input" placeholder="--"/>
+        </div>
+      </section>
     </div>
+
     <div class="checkout-button-center">
       <button class="checkout-button">Place order</button>
     </div>
