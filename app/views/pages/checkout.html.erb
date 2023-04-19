@@ -17,14 +17,14 @@
     </nav>
     <div class="checkout-container">
       <section class="checkout-order checkout-box">
-        <h2 class="checkout-box-title">ITEMS</h2>
+        <h2 class="checkout-h2">ITEMS</h2>
         <ul class="checkout-items">
-          <li>
+          <li class="checkout-item">
             <div><li class="item-quantity">1x</li></div>
             <div><li class="item-title">Cappuccino</li></div>
             <div><li class="item-price">6,00 €</li></div>
             <ul class="item-options">
-              <li class="item-option">Light Foam</li>
+              <li class="item-options-list">Light Foam</li>
             </ul>
           </li>
           <li>
@@ -49,22 +49,21 @@
 
         <section class="checkout-payment checkout-box">
           <div>
-            <h2 class="checkout-h3">NAME</h2>
+            <h2 class="checkout-h2">NAME</h2>
             <div class="user-data-group">
               <label for="user-name" class="input-label input-label-1">Name for order</label>
               <input id="user-name" type="text" class="input" placeholder="Jane Smith"/>
+          </div>
+          <div>
+              <h2 class="checkout-h2">PAYMENT</h2>
+              <div class="user-data-group">
+                <label for="card-number" class="input-label input-label-2">Card number</label>
+                <input id="card-number" type="text" class="input" placeholder="XXXX XXXX XXXX XXXX"/>
+          </div>
+          <div class="user-data-group">
+              <label for="ccv" class="input-label input-label-3">CCV number</label>
+              <input id="ccv" type="text" class="input short-input" placeholder="--"/>
             </div>
-          </div>
-
-        <section class="checkout-payment">
-          <h2 class="checkout-h3">PAYMENT</h2>
-          <div class="user-data-group">
-            <label for="card-number" class="input-label input-label-2">Card number</label>
-            <input id="card-number" type="text" class="input" placeholder="XXXX XXXX XXXX XXXX"/>
-          </div>
-          <div class="user-data-group">
-            <label for="ccv" class="input-label input-label-3">CCV number</label>
-            <input id="ccv" type="text" class="input short-input" placeholder="--"/>
           </div>
         </section>
 

@@ -17,6 +17,7 @@
   height: 30px;
   padding-right: 16px;
 }
+
 .checkout-nav {
   background-color: #43281C;
   color: #FBF2C0;
@@ -27,15 +28,37 @@
   margin-bottom: 45px;
 }
 
-.checkout-h3 {
+.checkout-h2 {
   font-family: 'Open Sans', sans-serif;
-  _padding: 20px;
 }
 
 .checkout-items {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.item-quantity {
+  grid-area: quantity;
+}
+
+.item-title {
+  grid-area: title;
+  font-weight: bold;
+}
+
+.item-price {
+  grid-area: price;
+  font-weight: bold;
+}
+
+.item-options-list {
+  grid-area: options;
+  color: #B08968;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
 }
 
 .checkout-box {
@@ -66,6 +89,12 @@
 .checkout-item {
   border-bottom: 2px solid #DDB892;
   display: grid;
+  padding: 10px 0;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas:
+    "quantity title   price"
+    "quantity options price";
+  row-gap: 8px;
 }
 
 .checkout-quantity {
@@ -81,17 +110,6 @@
   grid-area: price;
 }
 
-.sections-features {
-  background-color: #EDE1D5;
-    font-family: 'Open Sans', sans-serif;
-    padding: 24px;
-    margin-left: 32px;
-    margin-right: 32px;
-    display: grid;
-    grid-template-areas:
-    'quantity item . price'
-    'quantity item . price'
-  }
 
 .user-data-group {
   position: relative;
