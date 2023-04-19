@@ -1,5 +1,14 @@
 .checkout-container {
   background-color: #F0F0F0;
+  display: grid;
+  row-gap: 30px;
+  column-gap: 30px;
+  width: 100%;
+  padding: 30px;
+  grid-template-areas:
+    "order payment"
+    "total total";
+  grid-template-columns: 1fr 1fr;
 }
 
 #coffee-logo {
@@ -14,14 +23,36 @@
   font-family: 'Open Sans', sans-serif;
   align-items: center;
   justify-content: center;
+  margin-bottom: 45px;
 }
 
 .checkout-h3 {
   font-family: 'Open Sans', sans-serif;
+  _padding: 20px;
 }
 
-.checkout-ul {
+.checkout-items {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.checkout-box {
+  background-color: #eee1d5;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.checkout-order {
+  grid-area: order;
+}
+
+.checkout-item {
+  border-bottom: 2px solid #DDB892;
+  display: grid;
 }
 
 .checkout-quantity {
@@ -30,6 +61,7 @@
 
 .checkout-item {
   grid-area: item;
+  align-items: center;
 }
 
 .checkout-price {
@@ -40,7 +72,8 @@
   background-color: #EDE1D5;
     font-family: 'Open Sans', sans-serif;
     padding: 24px;
-    margin: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
     display: grid;
     grid-template-areas:
     'quantity item . price'
