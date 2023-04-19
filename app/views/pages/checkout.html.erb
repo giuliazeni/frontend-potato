@@ -22,7 +22,7 @@
           <li>
             <div><li class="item-quantity">1x</li></div>
             <div><li class="item-title">Cappuccino</li></div>
-            <div><li class="item-price">€ 6.00</li></div>
+            <div><li class="item-price">6,00 €</li></div>
             <ul class="item-options">
               <li class="item-option">Light Foam</li>
             </ul>
@@ -30,7 +30,7 @@
           <li>
             <div><li class="item-quantity">1x</li></div>
             <div><li class="item-title">Cappuccino</li></div>
-            <div><li class="item-price">€ 7.90</li></div>
+            <div><li class="item-price">7,90 €</li></div>
             <ul class="item-options">
               <li class="item-option">Almond Milk</li>
               <li class="item-option">Double Espresso Shot</li>
@@ -39,7 +39,7 @@
           <li>
             <div><li class="item-quantity">1x</li></div>
             <div><li class="item-title">Croissant</li></div>
-            <div><li class="item-price">€ 5.37</li></div>
+            <div><li class="item-price">5,37 €</li></div>
             <ul class="item-options">
               <li class="item-option">Butter</li>
             </ul>
@@ -56,11 +56,6 @@
             </div>
           </div>
 
-
-
-
-
-
         <section class="checkout-payment">
           <h2 class="checkout-h3">PAYMENT</h2>
           <div class="user-data-group">
@@ -69,11 +64,28 @@
           </div>
           <div class="user-data-group">
             <label for="ccv" class="input-label input-label-3">CCV number</label>
-            <input id="ccv" type="text" class="input" placeholder="--"/>
+            <input id="ccv" type="text" class="input short-input" placeholder="--"/>
           </div>
         </section>
 
-        <section class="checkout-total"></section>
+        <section class="checkout-total">
+          <table class="totals-table">
+            <tbody>
+              <tr>
+                <td>Subtotal:</td>
+                <td>19,27 €</td>
+              </tr>
+              <tr>
+                <td>Tax:</td>
+                <td>0,96 €</td>
+              </tr>
+              <tr class="final-totals">
+                <td>Total:</td>
+                <td>20,23 €</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 
       <div class="checkout-button-center">
         <button class="checkout-button">Place order</button>

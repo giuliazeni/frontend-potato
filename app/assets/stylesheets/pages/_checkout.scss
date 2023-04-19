@@ -57,6 +57,10 @@
 
 .checkout-total {
   grid-area: total;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .checkout-item {
@@ -121,9 +125,13 @@
   margin: 16px;
   background-color: rgba(0,0,0,0);
   border: 2px #885a2d solid;
-  width: 100%;
+  width: 600px;
   text-indent: 18px;
   font-size: 18px;
+}
+
+.short-input {
+  width: 200px;
 }
 
 .checkout-button-center {
@@ -144,4 +152,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.totals-table {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.final-totals {
+  font-weight: bold;
 }
