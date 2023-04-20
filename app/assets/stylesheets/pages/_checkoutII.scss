@@ -37,3 +37,76 @@
   margin-right: 30px; /** this doesn't affect anything!? **/
   width: 100%;
 }
+
+.co-box-title {
+  color: #885a2d;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.co-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.co-item {
+  border-bottom: 2px solid #DDB892;
+  display: grid;
+
+  padding: 10px 0;
+
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas:
+    "quantity title   price"
+    "quantity options price";
+
+  row-gap: 8px;
+}
+
+.co-item:last-child {
+  border-bottom: none;
+}
+
+.item-options-list {
+  grid-area: options;
+  color: #B08968;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.item-option {
+  margin-bottom: 5px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.user-input-label {
+  color: #885a2d;
+  background-color: #eee1d5;
+  font-size: 11px;
+  position: absolute;
+  left: 25px;
+  top: -7px;
+  padding: 0 2px;
+}
+
+.user-input {
+  background-color: rgba(0,0,0,0);
+  border: 2px #885a2d solid;
+  padding: 8px;
+  border-radius: 100px;
+  width: 100%;
+  text-indent: 18px;
+  font-size: 18px;
+}
+
+.short-input {
+  max-width: 200px;
+}
+
