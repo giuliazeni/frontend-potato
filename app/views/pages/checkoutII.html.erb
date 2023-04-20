@@ -2,20 +2,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Masters</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkoutII.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="main-nav">
-      <h1 class="brand">
-        <img src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png" alt="coffee masters logo" class="logo">
-        Coffee Masters
-      </h1>
+    <nav class="co-nav">
+      <%= image_tag "coffee_masters_logo.png", id: "co-logo", alt: "coffee logo" %>
+      <h1>Zeni's Coffee</h1>
     </nav>
-    <div class="page">
-      <section class="order box">
+    <div class="co-container">
+      <section class="order co-box">
         <h2 class="box-title">ITEMS</h2>
         <ul class="items">
           <li class="item">
@@ -46,14 +44,14 @@
         </ul>
       </section>
       <section class="payment">
-        <div class="name-box box">
+        <div class="name-box co-box">
           <h2 class="box-title">NAME</h2>
           <div class="input-group">
             <label class="user-input-label" for="name">Name for order</label>
             <input type="text" class="user-input" id="name">
           </div>
         </div>
-        <div class="cc-box box">
+        <div class="cc-box co-box">
           <h2 class="box-title">PAYMENT</h2>
           <div class="input-group">
             <label class="user-input-label" for="cc">Card number</label>
