@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'newspaper', to: 'pages#newspaper', as: :newspaper
   get 'profile', to: 'pages#profile', as: :profile
   get 'checkout', to: 'pages#checkout', as: :checkout
+  get 'checkoutII', to: 'pages#checkoutII', as: :checkoutII
 end
